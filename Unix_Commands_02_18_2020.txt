@@ -1,0 +1,72 @@
+mkdir dirname
+rmdir dirname
+rm -rf dirname (if dir is not empty)
+
+vi filename
+touch filename
+rm -f filename
+cp sourcefile destfile
+mv sourcefile destfile
+
+
+cat filename
+less filename
+	Shift+G - to reach EOF
+	?searchstring - to find the string
+	n - to go to previous search occurence
+	q - to quit 
+more filename
+tail filename (tail -15f filename)
+
+vi editor : 
+Command mode (Esc) , Insert mode (i)
+	Shift+G - to reach EOF
+	/searchstring - to find the string
+	n - to find next search occurence
+	:%s/searchstring/replacestring/g - find all and replace all
+	:wq! - to save and quit
+	dd - to delete the line (5d - to delete 5 lines from cursor point)
+	x - to delete character (3x - to delete 3 characters from cursor point)
+
+pwd
+cd <path> , cd .. , cd - , cd /
+date
+whoami , w
+
+
+
+free -m ( memory utilization)
+sar (CPU utilization)
+top (process-wise CPU , memory utilization)
+ps -ef |grep search
+grep  - to search
+du -sk *|sort -nr|head
+df -h
+
+ls -lrta
+
+chmod 775 filename
+chmod -R 775 dirname
+
+chown owner filename   (chown -R owner dirname)
+chown owner:group filename
+chgrp group filename
+
+zip/unzip filename
+gzip/gunzip filename
+
+tar -cvf filename - to tar
+tar -xvf filename.tar- to untar
+
+find / -name filename
+locate filename
+
+/etc/passwd - user details
+/etc/group - group details
+
+
+
+
+
+
+
